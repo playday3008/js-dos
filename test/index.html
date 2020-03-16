@@ -29,7 +29,7 @@
       wdosboxUrl: "../wdosbox.js",
       cycles: 750,
     }).ready(function (fs, main) {
-      fs.extract("test/digger.zip").then(function () {
+      fs.extract("../test/digger.zip").then(function () {
         main(["-c", "DIGGER.COM"]).then(function (ci) {
           window.Module = ci.dos;
           window.ci = ci;
